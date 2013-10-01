@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:precise
 
 RUN sed -i 's/main$/main universe/' /etc/apt/sources.list && apt-get update
 RUN apt-get install -y git-core python-pip build-essential python-dev libevent1-dev -y
